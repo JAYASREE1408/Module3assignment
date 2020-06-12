@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3 solution</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<style>
+  
+    body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+h1 {
+    margin: 0;
+    padding: 52px 0px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+
+}
+
+.box {
+    margin: 10px 5px;
+    border: 3px solid black;
+    background-color: #9e9e9e;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 30%;
+
+}
+
+.title {
+    float: right;
+    width: 28%;
+    height: 16px;
+    text-align: center;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+.content {
+    font-weight: bold;
+    margin: 55px 10px;
+
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    border-radius: 0px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.navbar-brand{
+  font-size: 35px;
+  color: white;
+  padding-left: 25px;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+.nav{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav{
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggle{
+    border: 2px solid white;
+    margin-right: 25px;
+}
+
+.icon-bar{
+    background-color: white;
+}
+
+
+.main-title{
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ff4532;
+  font-size: 50px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+}
+
+li{
+    
+    width: 100%;
+}
+
+.menu-item{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid black;
+    color: black;
+    display: block;
+}
+
+.menu-item:hover{
+    background-color: rgba(0,0,0,0.9);
+    color: rgba(0,0,0,0.4);
+}
+
+
+
+.row{
+    margin: 20px;
+}
+
+.content-box{
+    margin: 20px;
+    width: auto;
+    height: auto;
+    color: black;
+    background-color: rgba(0,0,0,0.2);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 20px;
+}
+
+.item-name{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* large devices */
+@media (min-width: 992px) {
+
+    .col-lg-4 {
+        width: 32%;
+    }
+
+
+}
+
+/* medium size devices */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .col-md-6 {
+        width: 48%;
+    }
+
+    .col-md-last {
+        width: 98%;
+    }
+}
+
+</style>
+
+<body>
+            <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+          
+            <p>Food LLC
+            </p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar"
+           aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+    <div class="collapse" id="myNavbar">
+      <ul class="nav navbar-nav visible-xs">
+        <li><a class="menu-item" href="#chi">Chicken</a></li>
+        <li><a class="menu-item" href="#be">Beef</a></li> 
+        <li><a class="menu-item" href="#su">Sushi</a></li> 
+      </ul>
+    </div>
+
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#chi">
+                <span  class="hidden-xs"> Chicken</a>
+            
+            
+              <a href="#be">
+                <span class="hidden-xs"> Beef</a>
+            
+            
+              <a href="#su">
+                <span class="hidden-xs"> Sushi</a>
+            </li>
+           
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+
+<h1>Our Menu</h1>
+<div class="container">
+    <div class="box col-lg-4 col-md-6">
+        
+        <div >
+            <h3 style="text-align: center;">Chicken</h3>
+        </div>
+        <div id="chi" class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod at molestias eligendi,
+            accusantium illum rerum omnis nostrum placeat, porro dolore esse doloremque deserunt consequatur vero
+            velit
+            perspiciatis sequi eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod at
+            molestias eligendi, accusantium illum rerum omnis nostrum placeat, porro dolore esse doloremque deserunt
+            consequatur vero velit perspiciatis sequi eaque.
+        </div>
+    </div>
+    <div class="box col-lg-4 col-md-6">
+
+        <div >
+            <h3  style="text-align: center;">Beef</h3>
+        </div>
+        <div id="be" class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod at molestias eligendi,
+            accusantium illum rerum omnis nostrum placeat, porro dolore esse doloremque deserunt consequatur vero
+            velit
+            perspiciatis sequi eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod at
+            molestias eligendi, accusantium illum rerum omnis nostrum placeat, porro dolore esse doloremque deserunt
+            consequatur vero velit perspiciatis sequi eaque.
+        </div>
+    </div>
+
+    <div class="box col-lg-4 col-md-last">
+        <div >
+            <h3  style="text-align: center;">Sushi</h3>
+        </div>
+
+        <div id="su" class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod at molestias eligendi,
+            accusantium illum rerum omnis nostrum placeat, porro dolore esse doloremque deserunt consequatur vero
+            velit
+            perspiciatis sequi eaque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod at
+            molestias eligendi, accusantium illum rerum omnis nostrum placeat, porro dolore esse doloremque deserunt
+            consequatur vero velit perspiciatis sequi eaque.
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
